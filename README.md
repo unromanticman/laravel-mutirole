@@ -3,8 +3,7 @@ laravel mutirole
 
 使用Laravel內建功能達到多種使用者權限驗證&登入
 
-請看這隻檔案範例：
-/app/Http/Controllers/UserCheckController.php 
+請看這隻檔案範例：<a href="https://github.com/unromanticman/laravel-mutirole/blob/master/laravelmutirole/app/Http/Controllers/UserCheckController.php">/app/Http/Controllers/UserCheckController.php </a>
 
 clone完專案後請先mirgate 然後手動在user資料表加入 role 這欄位 如下
 
