@@ -8,6 +8,8 @@ use App\Http\Requests;
 
 use Illuminate\Support\Facades\Auth;
 
+use Illuminate\Support\Facades\Hash;
+
 use App\User;
 
 
@@ -46,13 +48,13 @@ class UserCheckController extends Controller
     		return 'role:0' . $name;
 		}
 
-		// role 為 1
-		if (Auth::attempt(['email' => $request->get('email'), 'password' => $request->get('password'),'role' => 1])) 
-		{
-			//getLogin name
+	// role 為 1
+	if (Auth::attempt(['email' => $request->get('email'), 'password' => $request->get('password'),'role' => 1])) 
+	{
+		//getLogin name
     		$name = Auth::user()->name;
     		return 'role:1' . $name;
-		}
+	}
 
     }
 
@@ -70,9 +72,7 @@ class UserCheckController extends Controller
     }
 
     function userLogout(){
-		
-		Auth::logout();
-
+	Auth::logout();
     	return 'user logout';
     }
 }
