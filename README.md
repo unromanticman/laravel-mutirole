@@ -12,12 +12,16 @@ clone完專案後請先mirgate 然後手動在user資料表加入 role 這欄位
 
 之後可以執行這些路由：
 
-'API/User/checkUser/'
+列出目前登入使用者資訊:<br>
+'API/User/checkUser/'  
 
+使用者登入:<br>
 'API/User/userLogin/'
 
+使用者註冊:<br>
 'API/User/userRegister/'
 
+使用者登出:<br>
 'API/User/userLogout/'
 
 可以直接透過GET使用 參數則參考 /app/Http/Controllers/UserCheckController.php 
